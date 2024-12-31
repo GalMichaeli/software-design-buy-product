@@ -1,6 +1,6 @@
 package il.ac.technion.cs.sd.buy.external
 
-interface LineStorage {
+interface SuspendLineStorage {
 
     /** Appends a line to the end of the file */
     suspend fun appendLine(line: String)

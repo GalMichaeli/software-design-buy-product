@@ -1,8 +1,8 @@
 package il.ac.technion.cs.sd.buy.external
 
-internal class LineStorageFactoryImpl : LineStorageFactory {
+internal class SuspendLineStorageFactoryImpl : SuspendLineStorageFactory {
     
-    private class LineStorageImpl : LineStorage {
+    private class SuspendLineStorageImpl : SuspendLineStorage {
         
         override suspend fun appendLine(line: String) = Unit
 
@@ -12,6 +12,6 @@ internal class LineStorageFactoryImpl : LineStorageFactory {
     
     }
 
-    override suspend fun open(fileName: String): LineStorage = LineStorageImpl()
+    override suspend fun open(fileName: String): SuspendLineStorage = SuspendLineStorageImpl()
 
 }

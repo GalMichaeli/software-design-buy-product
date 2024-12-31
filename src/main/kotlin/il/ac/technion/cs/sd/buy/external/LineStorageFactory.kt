@@ -1,6 +1,6 @@
 package il.ac.technion.cs.sd.buy.external
 
-interface LineStorageFactory {
+interface SuspendLineStorageFactory {
 
     /**
      * Return the LineStorage instance associated with `fileName`, if it exists.
