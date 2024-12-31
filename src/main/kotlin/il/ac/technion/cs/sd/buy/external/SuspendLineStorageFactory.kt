@@ -7,6 +7,6 @@ interface SuspendLineStorageFactory {
      * Otherwise creates a new instance of LineStorage, associates it with
      * `fileName` and returns it.
      */
-    suspend fun open(fileName: String): LineStorage
+    suspend fun open(fileName: String): SuspendLineStorage
 
 }
